@@ -80,14 +80,9 @@ nav ul li {
     font-weight: var(--bold-font);
 }
 
-/* .burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-} */
+.navigation {
+    justify-content: center;
+}
 
 .landing {
     display: flex;
@@ -106,6 +101,13 @@ nav ul li {
     border-radius: 360px;
 }
 
+.text-container h4 {
+    opacity: 50%;
+    padding-left: 2rem;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
 .name {
     display: inline-block;
     margin: 0rem;
@@ -121,33 +123,27 @@ nav ul li {
     letter-spacing: 0.05rem;
 
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .name:hover {
     background-color: black;
     color: white;
-}
-
-.text-container {
-    transition: all 0.3s;
-}
-
-.text-container:hover {
     transform: translateY(-5px);
 }
 
-
-/* .span-name{
-    background-color: white;
-    border-radius: 10px;
-    
-    padding-inline: 0.5rem;
-    color: black;
+.hello{
+    padding-bottom: 0.5rem;
 }
 
-.span-name:hover {
-    transform: translateX(100px);
-} */
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.hidden2 {
+    opacity: 0;
+}
 
 .bio {
     width: 25rem;
@@ -165,11 +161,28 @@ nav ul li {
     padding: 0.3rem 0;
 }
 
+.about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+    padding-top: 5rem;
+}
+
+.about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
 .skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
+    padding-top: 5rem;
 }
 
 .skill-header {
