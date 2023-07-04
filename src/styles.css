@@ -36,10 +36,6 @@ a {
     color: var(--primary-color);
 }
 
-a:hover {
-    color: var(--secondary-color);
-}
-
 body {
     font-family: var(--font-family);
 }
@@ -96,8 +92,6 @@ nav ul li {
 
 .landing img {
     width: 40%;
-    /* aspect-ratio: 4/3;
-    object-fit: contain; */
     border-radius: 360px;
 }
 
@@ -150,19 +144,16 @@ nav ul li {
     padding: 0.625rem;
     border-radius: 6px;
     text-align: center;
-    /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
 }
 
 .job-title {
     padding: 2rem;
 }
 .about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
+    max-width: 70rem;
+    margin: auto;
+    margin-top: 2.5rem;
     padding-top: 5rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
-    
 }
 
 .about h2 {
@@ -225,39 +216,10 @@ nav ul li {
     font-weight:  var(--bold-font);
 }
 
-/* .skills-wrapper img {
-   padding: 1.25rem; 
-} */
-
-/* .icon {
-    width: 11.875rem;
-    height: 11.25rem;
-}
-
-.icon-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
-} */
-
 .projects {
-    background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
     text-align: center;
-}
-
-.project-pic {
-    width: 65%;
-    height: 60%
-}
-
-.projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .projects-title {
@@ -265,28 +227,66 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
-.project-container {
-    text-align: center;
-    width: 21.875rem;
-    padding: 1rem;
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    justify-content: center;
 }
 
-.project-container p {
-    padding: 0.4rem;
-}
+.project-link {
+    height: 16rem;
+    width: 32rem;
 
-.project-title {
-    margin-bottom: var(--bottom-margin);
-}
+    gap: 1rem;
 
-.project-details {
-    margin-bottom: var(--bottom-margin);
+    border-radius: 10px;
+    color: white;
+    background-size: contain;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+
+    display: flex;
+    flex-direction: row;
 }
 
 .project-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+
+    height: 16rem;
+    width: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-self: end;
+    align-items: end;
+    padding: 0rem 1rem;
+
+    opacity: 0%;
+    transition: all 0.3s;
+}
+
+.project-card:hover {
+    opacity: 100%;
+}
+
+.projects h4 {
+    font-size: 1.5rem;
+    margin: 0rem;
+    display: inline;
+}
+
+.projects p {
+    margin-block: 0rem 1rem;
+}
+
+.project-card-top-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

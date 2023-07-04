@@ -1,0 +1,42 @@
+@media screen and (max-width: 750px) {
+    :root {
+        overflow-x: hidden;
+    }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+
+        width: 100%;
+        padding: 2rem 0rem;
+    }
+    
+    .landing img {
+        width: 70%;
+        border-radius: 360px;
+    }
+
+    .about p {
+        line-height: var(--line-height);
+        margin: 1rem;
+    }
+
+    .project-link {
+        height: 8rem;
+        width: 16rem;
+    }
+
+    .project-card {
+        height: 8rem;
+        width: 100%;
+
+        padding-bottom: 1rem;
+
+        opacity: 100%;
+    }
+
+    .projects p {
+        display: none;
+    }
+}
